@@ -227,6 +227,19 @@ no work. There is no source/rendered toggle to manage.
 You can also reveal the element at point on demand with
 `markdown-modern-toggle-element-at-point` (`C-c C-v e`).
 
+HTTP and HTTPS link labels and angle-bracket autolinks carry `browse-url-data`
+text properties. In an Emacs build with OSC-8 hyperlink support, enable
+`tty-use-osc-8-hyperlinks` to make these links clickable through a terminal
+that supports OSC-8:
+
+```elisp
+(setq tty-use-osc-8-hyperlinks t)
+```
+
+Local files, internal anchors and other URL schemes keep their usual Emacs
+navigation. The metadata is removed when rendering is cleared or you switch
+major modes.
+
 ### Navigation
 
 | Key | Command | Description |
