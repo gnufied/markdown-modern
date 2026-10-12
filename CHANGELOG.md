@@ -7,6 +7,8 @@ on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed
 
+- `C-c '` shows the current fenced code block's contents in the edit buffer,
+  rather than opening an empty region when Tree-sitter skips the content node.
 - Local links open files of any type in Emacs, relative to the Markdown file,
   and support line fragments such as `#L352` and `#L352-L365`. `M-,` returns
   to the source buffer. Missing files report an error.
