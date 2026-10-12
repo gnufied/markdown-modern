@@ -7,6 +7,8 @@ on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed
 
+- Extra left indentation now defaults to zero, so markdown-modern does not add
+  space on top of the user's configured window margin.
 - `C-c '` shows the current fenced code block's contents in the edit buffer,
   rather than opening an empty region when Tree-sitter skips the content node.
 - Local links open files of any type in Emacs, relative to the Markdown file,
