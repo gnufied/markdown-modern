@@ -7,6 +7,9 @@ on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed
 
+- Local file links reuse another regular window when available, skipping side
+  and special windows. With no suitable alternative, they use the current
+  window without creating a split.
 - Extra left indentation now defaults to zero, so markdown-modern does not add
   space on top of the user's configured window margin.
 - `C-c '` shows the current fenced code block's contents in the edit buffer,
